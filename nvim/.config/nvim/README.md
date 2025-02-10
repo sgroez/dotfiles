@@ -1,4 +1,4 @@
-# Install Treesitter language packs
+# Install Treesitter language packs in NixOS
 use following command to open shell with gcc library
 
 ```bash
