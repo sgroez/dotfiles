@@ -2,13 +2,32 @@
     "workbench.colorTheme": "GitHub Dark",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
     "zenMode.fullScreen": false,
     "zenMode.centerLayout": false,
+    "zenMode.hideStatusBar": false,
     "zenMode.hideLineNumbers": false,
-    "editor.fontLigatures": true,
-    "zenMode.showTabs": "single",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+    "breadcrumbs.enabled": false,
+    "vim.leader" : "," ,
+    "terminal.integrated.hideOnStartup": "always",
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["<leader>","e"],
+            "commands" : [
+            "workbench.view.explorer"
+            ]
+        },
+        {
+            "before" : ["<leader>","t"],
+            "commands" : [
+                "workbench.action.terminal.new"
+            ]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-p>": false
     },
-    "editor.minimap.enabled": false
+    "extensions.experimental.affinity": { "vscodevim.vim": 1
+    },
 }
