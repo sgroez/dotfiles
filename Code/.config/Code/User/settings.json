@@ -9,7 +9,8 @@
     "zenMode.hideStatusBar": false,
     "zenMode.hideLineNumbers": false,
     "breadcrumbs.enabled": false,
-    "vim.leader" : "," ,
+    "workbench.sideBar.location": "right",
+    "vim.leader" : "." ,
     "terminal.integrated.hideOnStartup": "always",
     "vim.normalModeKeyBindings": [
         {
