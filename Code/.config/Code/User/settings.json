@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "editor.fontFamily": "JetBrains Mono",
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "editor.fontLigatures": true,
+    "zenMode.showTabs": "single",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.minimap.enabled": false
+}
