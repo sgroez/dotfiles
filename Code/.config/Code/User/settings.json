@@ -10,25 +10,10 @@
     "zenMode.hideLineNumbers": false,
     "breadcrumbs.enabled": false,
     "workbench.sideBar.location": "right",
-    "vim.leader" : "." ,
-    "terminal.integrated.hideOnStartup": "always",
-    "vim.normalModeKeyBindings": [
-        {
-            "before" : ["<leader>","e"],
-            "commands" : [
-            "workbench.view.explorer"
-            ]
-        },
-        {
-            "before" : ["<leader>","t"],
-            "commands" : [
-                "workbench.action.terminal.new"
-            ]
-        },
-    ],
     "vim.handleKeys": {
         "<C-p>": false
     },
-    "extensions.experimental.affinity": { "vscodevim.vim": 1
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
     },
 }
