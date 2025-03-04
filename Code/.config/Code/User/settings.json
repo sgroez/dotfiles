@@ -1,19 +1,23 @@
 {
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.preferredDarkColorTheme": "GitHub Dark",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true,
-    "editor.minimap.enabled": false,
-    "zenMode.fullScreen": false,
-    "zenMode.centerLayout": false,
-    "zenMode.hideStatusBar": false,
-    "zenMode.hideLineNumbers": false,
-    "breadcrumbs.enabled": false,
-    "workbench.sideBar.location": "right",
-    "vim.handleKeys": {
-        "<C-p>": false
-    },
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
-    },
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
+  "breadcrumbs.enabled": false,
+  "workbench.sideBar.location": "right",
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
