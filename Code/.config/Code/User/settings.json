@@ -4,6 +4,7 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
   "zenMode.fullScreen": false,
   "zenMode.centerLayout": false,
   "zenMode.hideStatusBar": false,
