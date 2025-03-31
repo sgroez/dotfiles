@@ -9,7 +9,7 @@
 	stow
 	neovim
 	jetbrains-mono
-      };
+      ];
     };
   };
 }
