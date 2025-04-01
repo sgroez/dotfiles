@@ -11,7 +11,7 @@
 	stow
 	neovim
 	lynx
-	tldr
+	tealdeer
       ];
     };
     devPackages = pkgs.buildEnv {
