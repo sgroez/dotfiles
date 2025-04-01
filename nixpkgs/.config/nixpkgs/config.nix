@@ -11,6 +11,7 @@
 	stow
 	neovim
 	lynx
+	tldr
       ];
     };
     devPackages = pkgs.buildEnv {
