@@ -14,6 +14,9 @@
       blender
       postman
       audacity
+      rpi-imager
+      inkscape
+      plover.dev
     ];
   };
 }
