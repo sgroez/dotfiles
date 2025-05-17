@@ -12,11 +12,12 @@
       vscode
       gimp
       blender
-      postman
       audacity
       rpi-imager
-      inkscape
-      plover.dev
     ];
+
+    programs.steam = {
+      enable = true;
+    };
   };
 }

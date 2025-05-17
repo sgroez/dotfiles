@@ -3,9 +3,9 @@
     ./system/basesystem.nix
     ./system/networksystem.nix
     ./system/printsystem.nix
-    ./system/usbmodeswitchsystem.nix
+    ./system/huaweiusbmodem.nix
   ];
 
   printsystem.enable = true;
-  usbmodeswitchsystem.enable = true;
+  huaweiusbmodem.enable = true;
 }
