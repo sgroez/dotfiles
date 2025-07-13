@@ -9,7 +9,8 @@ window#waybar {
 #clock,
 #battery,
 #network,
-#custom-spacer {
+#custom-pomodoro,
+#custom-spacer{
     padding: 0px 5px;
     color: #000000;
     background-color: #ffffff;

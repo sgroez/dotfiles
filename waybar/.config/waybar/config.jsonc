@@ -13,6 +13,8 @@
 	    "custom/spacer",
 	    "network",
 	    "custom/spacer",
+      "custom/pomodoro",
+      "custom/spacer",
 	    "clock",
 	]
     },
@@ -32,4 +34,10 @@
         "format-ethernet": "{ipaddr}/{cidr}",
         "format-disconnected": "Offline",
     },
+    "custom/pomodoro": {
+    "exec": "pomodoro status --format '⏱ %R min'",
+    "interval": 5,
+    "return-type": "text",
+    "format": "{}"
+}
 } 
