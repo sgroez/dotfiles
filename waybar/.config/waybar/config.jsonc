@@ -35,9 +35,9 @@
         "format-disconnected": "Offline",
     },
     "custom/pomodoro": {
-    "exec": "pomodoro status --format '⏱ %R min'",
-    "interval": 5,
-    "return-type": "text",
-    "format": "{}"
-}
+        "exec": "pomodoro status --format '⏱ %R min'",
+        "interval": 5,
+        "return-type": "text",
+        "format": "{}"
+    }
 } 
