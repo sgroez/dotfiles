@@ -6,8 +6,8 @@ JsonObject {
   component Fonts: JsonObject {
     property Font text: Font {}
     property Font icon: Font {
-      family: "Font Awesome 6 Free"
-      style: "Solid"
+      family: "Material Icons"
+      style: "Round"
     }
   }
 

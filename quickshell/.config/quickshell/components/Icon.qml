@@ -6,4 +6,5 @@ Text {
   id: root
   font.family: Config.appearance.fonts.icon.family
   font.styleName: Config.appearance.fonts.icon.style
+  font.pixelSize: 17
 }
