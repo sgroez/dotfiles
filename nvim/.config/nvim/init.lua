@@ -12,3 +12,6 @@ vim.o.termguicolors = true -- Enable 24-bit RGB colors
 -- Syntax highlighting and filetype plugins
 vim.cmd('syntax enable')
 vim.cmd('filetype plugin indent on')
+
+-- Keyboard shortcuts
+vim.keymap.set('n', '<M-e>', ':Explore<CR>')
