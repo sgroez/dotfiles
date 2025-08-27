@@ -20,6 +20,6 @@ PanelWindow {
     //Components
     Clock {}
     Battery {}
-    Network {}
+    NetworkIndicator {}
   }
 }
