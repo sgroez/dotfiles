@@ -20,5 +20,6 @@ PanelWindow {
     //Components
     Clock {}
     Battery {}
+    Network {}
   }
 }

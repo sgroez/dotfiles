@@ -1,8 +1,9 @@
 import Quickshell
 import QtQuick
 import qs.services
+import qs.components
 
-Text {
+StyledText {
   id: root
   text: `BAT: ${Power.capacity}`
   color: Power.isCharging ? "#00FF00": "#000000"
