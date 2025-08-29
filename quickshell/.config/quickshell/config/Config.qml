@@ -10,7 +10,7 @@ Singleton {
   property alias appearance: adapter.appearance
 
   FileView {
-    path: `${StandardPaths.standardLocations(StandardPaths.GenericConfigLocation)[0]}/bar`
+    path: `${StandardPaths.standardLocations(StandardPaths.GenericConfigLocation)[0]}/bar.json`
     watchChanges: true
     onFileChanged: reload()
 

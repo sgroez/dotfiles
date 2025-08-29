@@ -21,5 +21,6 @@ PanelWindow {
     Clock {}
     Battery {}
     NetworkIndicator {}
+    WeatherIndicator {}
   }
 }

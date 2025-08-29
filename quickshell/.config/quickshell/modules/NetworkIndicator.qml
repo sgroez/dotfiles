@@ -1,15 +1,21 @@
 import Quickshell
 import QtQuick
+import QtQuick.Layouts
 import qs.components
 import qs.services
 
-Icon {
+RowLayout {
   id: root
-  text: {
-    if (Network.connected) {
-      if (Network.onWifi) return "\ue63e";
-      return "\ueb2f"
+  StyledText {
+    text: Network.name
+  }
+  Icon {
+    text: {
+      if (Network.connected) {
+        if (Network.onWifi) return "wifi";
+        return "lan"
+      }
+      return "wifi_off"
     }
-    return "\ue648"
   }
 }

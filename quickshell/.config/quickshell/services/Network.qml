@@ -9,7 +9,7 @@ Singleton {
 
   property bool connected: false
   property bool onWifi: true
-  property string networkName: ""
+  property string name: ""
 
   Timer {
     interval: 60000 //update every minute
@@ -32,7 +32,7 @@ Singleton {
           if (state === "connected") {
             root.connected = true;
             root.onWifi = type === "wifi";
-            root.networkName = connection;
+            root.name = connection;
             break;
           }
         }
