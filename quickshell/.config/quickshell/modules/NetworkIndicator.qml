@@ -6,9 +6,6 @@ import qs.services
 
 RowLayout {
   id: root
-  StyledText {
-    text: Network.name
-  }
   Icon {
     text: {
       if (Network.connected) {

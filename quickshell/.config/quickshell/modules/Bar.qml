@@ -9,19 +9,51 @@ PanelWindow {
     left: true
     right: true
   }
-
   implicitHeight: 30
 
   RowLayout {
-    id: barContent
-    anchors.centerIn: parent
-    spacing: 10
+    id: content
+    anchors.fill: parent
+    anchors.leftMargin: 20
+    anchors.rightMargin: 20
 
-    //Components
-    Clock {}
-    Calendar {}
-    Battery {}
-    NetworkIndicator {}
-    WeatherIndicator {}
+    //Left
+    RowLayout {
+      id: left
+      spacing: 10
+      Layout.fillWidth: true
+
+      Clock {}
+      Calendar {}
+    }
+
+    //Spacer
+    Item {
+      Layout.fillWidth: true
+    }
+
+    //Middle
+    RowLayout {
+      id: middle
+      spacing: 10
+      Layout.fillWidth: true
+
+      WeatherIndicator {}
+    }
+
+    //Spacer
+    Item {
+      Layout.fillWidth: true
+    }
+
+    //Right
+    RowLayout {
+      id: right
+      spacing: 10
+      Layout.fillWidth: true
+
+      NetworkIndicator {}
+      Battery {}
+    }
   }
 }
