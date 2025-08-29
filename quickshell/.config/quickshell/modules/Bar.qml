@@ -19,6 +19,7 @@ PanelWindow {
 
     //Components
     Clock {}
+    Calendar {}
     Battery {}
     NetworkIndicator {}
     WeatherIndicator {}
