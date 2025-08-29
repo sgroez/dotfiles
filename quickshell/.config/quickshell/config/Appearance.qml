@@ -6,7 +6,7 @@ JsonObject {
   component Fonts: JsonObject {
     property Font text: Font {}
     property Font icon: Font {
-      family: "Material Symbols Outlined"
+      family: "Material Symbols Rounded"
       style: ""
     }
   }
