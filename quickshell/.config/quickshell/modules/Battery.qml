@@ -6,5 +6,5 @@ import qs.utils
 
 Icon {
   id: root
-  text: Icons.getBatteryIcon(Power.capacity)
+  text: Icons.getBatteryIcon(Power.percentage)
 }
