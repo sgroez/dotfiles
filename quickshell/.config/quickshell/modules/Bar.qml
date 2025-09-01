@@ -38,7 +38,7 @@ PanelWindow {
       id: middle
       spacing: 10
       Layout.fillWidth: true
-      visible: !Config.appearance.hasNotch
+      visible: Config.appearance.hasNotch === false
 
       WeatherIndicator {}
     }
