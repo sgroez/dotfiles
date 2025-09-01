@@ -1,6 +1,7 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
+import qs.config
 
 PanelWindow {
   id: root
@@ -37,6 +38,7 @@ PanelWindow {
       id: middle
       spacing: 10
       Layout.fillWidth: true
+      visible: !Config.appearance.hasNotch
 
       WeatherIndicator {}
     }

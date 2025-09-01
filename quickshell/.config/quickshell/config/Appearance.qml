@@ -1,6 +1,7 @@
 import Quickshell.Io
 
 JsonObject {
+  property bool hasNotch: false
   property Fonts fonts: Fonts {}
 
   component Fonts: JsonObject {
