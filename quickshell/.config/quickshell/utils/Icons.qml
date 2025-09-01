@@ -62,7 +62,7 @@ Singleton {
     50: "battery_android_4",
     30: "battery_android_3",
     20: "battery_android_2",
-    10: "battery_android_fame_1",
+    10: "battery_android_1",
     0:  "battery_android_alert",
   })
 
