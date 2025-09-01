@@ -6,31 +6,37 @@ import QtQuick
 
 Singleton {
   id: root
+  property string batteryIdentifier
   property real capacity
   property bool isCharging
 
   Timer {
+    id: timer
     interval: 60000 //update every minute
-    running: true
+    running: false
     repeat: true
     onTriggered: capacityProc.running = true
   }
 
   Process {
-    id: capacityProc
-    command: ["cat", "/sys/class/power_supply/BAT1/capacity"]
+    id: identifyMainBatteryProc
+    command: ["sh", "../scripts/identifyMainBattery.sh"]
     running: true
     stdout: StdioCollector {
-      onStreamFinished: root.capacity = parseInt(this.text.trim()) || 0
+      onStreamFinished: {
+        root.batteryIdentifier = this.text.trim();
+        timer.running = true;
+        capacityProc.running = true;
+      }
     }
   }
 
   Process {
-    id: chargingProc
-    command: ["cat", "/sys/class/power_supply/BAT1/status"]
-    running: true
+    id: capacityProc
+    command: ["cat", `/sys/class/power_supply/${batteryIdentifier}/capacity`]
+    running: false
     stdout: StdioCollector {
-      onStreamFinished: root.isCharging = this.text.trim() == "Charging"
+      onStreamFinished: root.capacity = parseInt(this.text.trim()) || 0
     }
   }
 }
