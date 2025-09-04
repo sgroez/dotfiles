@@ -1,10 +1,10 @@
 import Quickshell
+import Quickshell.Services.UPower
 import QtQuick
-import qs.services
 import qs.components
 import qs.utils
 
 Icon {
   id: root
-  text: Icons.getBatteryIcon(Power.percentage)
+  text: Icons.getBatteryIcon(UPower.displayDevice.percentage * 100)
 }
