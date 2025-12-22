@@ -15,3 +15,7 @@ vim.cmd('filetype plugin indent on')
 
 -- Keyboard shortcuts
 vim.keymap.set('n', '<M-e>', ':Explore<CR>')
+vim.keymap.set('n', '<M-q>', ':q<CR>')
+vim.keymap.set('n', '<M-w>', ':w<CR>')
+vim.keymap.set('n', '<M-r>', ':%s/')
+vim.keymap.set('n', '<M-f>', '/')
