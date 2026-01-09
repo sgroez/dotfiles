@@ -9,3 +9,8 @@ Store personal dotfiles in gnu stow format
 ```
 stow .
 ```
+
+or stow specific dotfiles using
+```
+stow <directory>
+```
