@@ -72,7 +72,8 @@ Singleton {
     return "air";
   }
 
-  function getBatteryIcon(batteryLevel) {
+  function getBatteryIcon(batteryDevice) {
+    const batteryLevel = batteryDevice.percentage * 100;
     const levels = Object.keys(batteryIcons)
       .map(Number)
       .sort((a, b) => b - a); // Descending sort

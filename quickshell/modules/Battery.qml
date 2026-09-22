@@ -4,7 +4,21 @@ import QtQuick
 import qs.components
 import qs.utils
 
-Icon {
+Item {
   id: root
-  text: Icons.getBatteryIcon(UPower.displayDevice.percentage * 100)
+  implicitWidth: battery.width
+  implicitHeight: battery.height
+
+  Icon {
+    id: battery
+    text: Icons.getBatteryIcon(UPower.displayDevice)
+    anchors.centerIn: parent
+    z: 0
+  }
+  Icon {
+    text: UPower.onBattery ? "" : "bolt"
+    color: "#FFFFFF"
+    anchors.centerIn: parent
+    z: 1
+  }
 }
