@@ -85,4 +85,17 @@ Singleton {
 
     return undefined; // If below all thresholds
   }
+
+  function getWifiIcon(connection) {
+    if (connection != null) {
+      if (connection.signalStrength < 0.33) {
+        return "wifi_1_bar"
+      }else if (connection.signalStrength < 0.66) {
+        return "wifi_2_bar"
+      }else {
+        return "wifi"
+      }
+    }
+    return "wifi_off"
+  }
 }

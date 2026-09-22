@@ -3,40 +3,20 @@ pragma Singleton
 import Quickshell
 import Quickshell.Io
 import QtQuick
+import Quickshell.Networking
 
 Singleton {
   id: root
 
-  property bool connected: false
-  property bool onWifi: true
-  property string name: ""
+  readonly property var devices: Networking.devices.values
 
-  Timer {
-    interval: 60000 //update every minute
-    running: true
-    repeat: true
-    onTriggered: networkProc.running = true
-  }
+  //wired
+  readonly property var wiredDevice: devices.find(d => d.type === DeviceType.Wired) ?? null
+  readonly property bool hasWiredConnection: wiredDevice?.connected ?? false
 
-  Process {
-    id: networkProc
-    command: ["nmcli", "-t", "-f", "TYPE,STATE,CONNECTION", "device"]
-    running: true
-    stdout: StdioCollector {
-      onStreamFinished: {
-        const lines = text.split("\n");
-        for (const line of lines) {
-          const [type, state, connection] = line.trim().split(":");
-          if (type !== "wifi" && type !== "ethernet") continue;
-
-          if (state === "connected") {
-            root.connected = true;
-            root.onWifi = type === "wifi";
-            root.name = connection;
-            break;
-          }
-        }
-      }
-    }
-  }
+  //wifi
+  readonly property var wifiDevice: devices.find(d => d.type === DeviceType.Wifi) ?? null
+  readonly property bool hasWifiConnection: wifiDevice?.connected ?? false
+  readonly property var networks: wifiDevice?.networks.values ?? []
+  readonly property var activeNetwork: networks.find(n => n.connected) ?? null
 }

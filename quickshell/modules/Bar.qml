@@ -55,7 +55,7 @@ PanelWindow {
       Layout.fillWidth: true
 
       BluetoothIndicator {}
-      NetworkIndicator {}
+      WifiIndicator {}
       Battery {}
     }
   }
