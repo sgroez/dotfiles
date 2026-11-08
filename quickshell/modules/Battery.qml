@@ -3,6 +3,7 @@ import Quickshell.Services.UPower
 import QtQuick
 import qs.components
 import qs.utils
+import qs.config
 
 Item {
   id: root
@@ -17,7 +18,7 @@ Item {
   }
   Icon {
     text: UPower.onBattery ? "" : "bolt"
-    color: "#FFFFFF"
+    color: Config.appearance.colors.brightAccent.hex
     anchors.centerIn: parent
     z: 1
   }

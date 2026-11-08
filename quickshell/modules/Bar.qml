@@ -10,13 +10,15 @@ PanelWindow {
     left: true
     right: true
   }
-  implicitHeight: 30
+  implicitHeight: 33
+  color: "transparent"
 
   RowLayout {
     id: content
     anchors.fill: parent
-    anchors.leftMargin: 20
-    anchors.rightMargin: 20
+    anchors.margins: 15
+    anchors.leftMargin: 50
+    anchors.rightMargin: 50
 
     //Left
     RowLayout {
