@@ -39,8 +39,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border = { colors = {"rgb(33ccff)", "rgb(00ff99)"}, angle = 45 },
-            inactive_border = "rgb(595959)",
+            active_border = { colors = {"rgb(faba38)", "rgb(ffee4f)"}, angle = 45 },
+            inactive_border = "rgb(a06419)",
         },
     
 
@@ -49,6 +49,7 @@ hl.config({
 
     misc = {
       disable_hyprland_logo = true,
+      disable_splash_rendering = true,
       background_color = "rgb(000000)",
     },
 
