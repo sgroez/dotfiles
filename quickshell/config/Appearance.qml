@@ -7,14 +7,14 @@ JsonObject {
 
   component Fonts: JsonObject {
     property Font text: Font {
-      family: "JetBrains Mono"
-      style: "Medium"
-      pointSize: 11
+      family: "Zpix"
+      style: "Regular"
+      pixelSize: 20 //not used
     }
     property Font icon: Font {
       family: "Material Symbols Rounded"
       style: ""
-      pointSize: 13
+      pixelSize: 13
     }
   }
 
@@ -34,7 +34,7 @@ JsonObject {
   component Font: JsonObject {
     property string family: "Sans Serif"
     property string style: "Regular"
-    property real pointSize: 10
+    property real pixelSize: 10
   }
 
   component Color: JsonObject {

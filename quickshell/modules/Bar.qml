@@ -23,7 +23,7 @@ PanelWindow {
     //Left
     RowLayout {
       id: left
-      spacing: 10
+      spacing: 20
       Layout.fillWidth: true
 
       Clock {}
