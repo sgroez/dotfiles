@@ -7,14 +7,14 @@ JsonObject {
 
   component Fonts: JsonObject {
     property Font text: Font {
-      family: "Zpix"
+      family: "Unifont"
       style: "Regular"
-      pixelSize: 20 //not used
+      pixelSize: 15
     }
     property Font icon: Font {
       family: "Material Symbols Rounded"
       style: ""
-      pixelSize: 13
+      pixelSize: 14
     }
   }
 
